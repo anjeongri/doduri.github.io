@@ -19,7 +19,6 @@
                 <div id="initialOptions" class="content text-center active">
                     <button type="button" class="btn btn-primary btn-lg btn-block mb-3" onclick="showOptions('adultOptions')">Adult</button>
                     <button type="button" class="btn btn-primary btn-lg btn-block mb-3" onclick="showOptions('pedsOptions')">Peds</button>
-                    <button type="button" style="display:none;" class="btn btn-primary btn-lg btn-block mb-3" onclick="showOptions('pedsWellCheckUp')">Peds Well Check Up</button>
                 </div>
                 <div id="adultOptions" class="content text-center">
                     <button type="button" class="btn btn-secondary btn-block mb-2" onclick="showOptions('rankImage')">Military Ranks</button>
@@ -47,16 +46,6 @@
                     <button type="button" class="btn btn-secondary btn-block mb-2" onclick="showOptions('tylenolImage')">Tylenol Dose</button>
                     <button type="button" class="btn btn-secondary btn-block mb-2" onclick="showOptions('ibuprofenImage')">Ibuprofen Dose</button>
                     <button type="button" class="btn btn-warning btn-block mt-3" onclick="showOptions('initialOptions')">Back</button>
-                </div>
-                <div id="pedsWellCheckUp" class="content text-center">
-					<div class="form-group">
-						<label for="visitDate">Date of Visit</label>
-						<input type="date" class="form-control" id="visitDate" required onchange="calculateRanges()">
-					</div>
-					<label >Date of Birth</label>
-					<div class="form-group" id="buttonsContainer"></div>
-					<button type="button" class="btn btn-warning btn-block mt-3" onclick="showOptions('initialOptions')">Back</button>
-                </div>
                 <div id="nbsOptions" class="content text-center">
                     <img src="./images/nbs.png" loading="lazy" alt="Hospital Address for NBS" class="img-fluid">
                     <button type="button" class="btn btn-warning btn-block mt-3" onclick="showOptions('pedsOptions')">Back</button>
